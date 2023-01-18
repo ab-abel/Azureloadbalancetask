@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style> 
+        html, body { margin:0; padding:0 }
+        #box {
+            margin-top:-20px;
+            height: 100px;
+            background-color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h2 {
+            padding-top: 30px;
+            padding-left: 40px;
+        }
+
+        #imgdiv {
+        width: 100px;
+        height: 50px;
+        font-weight: bold;
+        position: relative;
+        animation: mymove 5s infinite;
+        animation-direction: alternate;
+        padding-top: 100px;
+        }
+        img {
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+        width: 150px;
+        }
+
+        #div5 {animation-timing-function: ease-in-out;}
+
+        @keyframes mymove {
+        from {left: 10%;
+                transform: rotate(0deg);
+            }
+        to {left: 80%;
+            transform: rotate(45deg);
+            }
+
+        }
+    </style>
+    <title>Azure task</title>
+</head>
+<body style="background-color: rgb(34, 33, 33);">
+
+    <div id="box">
+        <h2 style="color:#ddd">Azure Task One <span style="font-size: small;">~ VM2</span></h2>
+    </div>
+    <div id="imgdiv">
+        <img src="vm.png" alt="Paris" style="width:150px">
+        <span style="color:azure"><p>Virtual Machine Two</p></span>
+    </div>
+</body>
+</html>
